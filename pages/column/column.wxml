@@ -1,0 +1,239 @@
+<!--pages/column/column.wxml-->
+
+
+
+<view class="example-search">
+  <t-search placeholder="搜索预设文案" />
+</view>
+
+
+<t-sticky >
+    <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs">
+        <t-tab-panel label="前端学习" value="0" >  
+        </t-tab-panel>
+        <t-tab-panel label="JAVA开发" value="1" >
+        </t-tab-panel>
+        <t-tab-panel label="Golong开发" value="2" >
+
+        </t-tab-panel>
+        <t-tab-panel label="计算机考研" value="4" >
+        </t-tab-panel>
+    </t-tabs>
+</t-sticky >
+
+
+    <view class="block" hidden="{{tabsValue!=0}}">
+            <t-steps layout="vertical" current="{{third}}" bind:change="onThirdChange"
+            class="stepArea">
+            <t-step-item   title="前端基础" content="HTML -- CSS -- JS基础的快速入门">
+                <view  slot="extra">
+                <image
+                    src="https://min-progress-1316646528.cos.ap-nanjing.myqcloud.com/%E5%B3%B0%E5%93%A5%E5%8D%9A%E5%AE%A2/adver1.jfif"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+            <t-step-item   title="前端进阶" content="ES6 AJAX -- Less/Sass -- Grid Flex布局">
+                <view  slot="extra">
+                <image
+                    src="https://min-progress-1316646528.cos.ap-nanjing.myqcloud.com/%E5%B3%B0%E5%93%A5%E5%8D%9A%E5%AE%A2/adver2.png"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+
+
+            <t-step-item   title="工程化准备" content="Node开发 -- Webpack -- HTTP网络基础理论">
+                <view  slot="extra">
+                <image
+                    src="https://min-progress-1316646528.cos.ap-nanjing.myqcloud.com/%E5%B3%B0%E5%93%A5%E5%8D%9A%E5%AE%A2/adver3.png"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+            <t-step-item   title="前端工程化" content="Vue技术栈  //  React技术栈 -- TS语言及其项目应用">
+                <view  slot="extra">
+                <image
+                    src="https://min-progress-1316646528.cos.ap-nanjing.myqcloud.com/%E5%B3%B0%E5%93%A5%E5%8D%9A%E5%AE%A2/adver4.jpg"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+
+            <t-step-item   title="项目准备" content="MySQL数据库 -- Egg或其他服务端开发 --  Next服务端渲染框架">
+                <view  slot="extra">
+                <image
+                    src="https://min-progress-1316646528.cos.ap-nanjing.myqcloud.com/%E5%B3%B0%E5%93%A5%E5%8D%9A%E5%AE%A2/adver5.png"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+            <t-step-item   title="个人项目" content="先跟着网上视频做一个 -- 之后自行构思做吧">
+                <view  slot="extra">
+                <image
+                    src="https://min-progress-1316646528.cos.ap-nanjing.myqcloud.com/%E5%B3%B0%E5%93%A5%E5%8D%9A%E5%AE%A2/adver6.png"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+            <t-step-item   title="大前端开发" content="微信小程序（Taro/原生/uniApp）-- 移动端APP开发（Flutter/React Native） -- 桌面端开发（Electron）">
+                <view  slot="extra">
+                <image
+                    src="https://www.fatbit.com/fab/wp-content/uploads/2020/04/Flutter_vs_React_Native.jpg"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+            <t-step-item   title="后续" content="自行找感兴趣的方向吧">
+                <view  slot="extra">
+                <image
+                    src="https://tdesign.gtimg.com/miniprogram/images/steps1.png"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+            <t-step-item   title="WEB已死" content="速逃">
+                <view  slot="extra">
+                <image
+                    src="https://tdesign.gtimg.com/miniprogram/images/steps1.png"
+                    alt="图标"
+                    style="width: 80%"
+                    mode="widthFix"
+                />
+                <view class="bottomView">
+                    <view class="tagView">
+                        <t-tag class="tagSelf" wx:for="{{[1,2,3,4]}}"
+                        theme="{{statusList[index]}}" size="small">
+                        标签{{index}}
+                        </t-tag>
+                    </view>
+                    <button class="bottomBtn" type="warn" size="mini">前往相关文章</button>
+                </view>
+                </view>
+            </t-step-item>
+
+
+
+            </t-steps>
+        </view>
+        <!-- 进度条位置 -->
+
+
+
+        <view   class="emptyBox" hidden="{{tabsValue==0}}">
+                <t-result t-class-image="external-class-image">
+                    <view slot="title"> 相关学习路线还没有 </view>
+                    <view slot="description"> 符合你的学习路线这里还没有哦,看看别处吧！ </view>
+                </t-result>
+            </view>
+
+
+
+
+
+
+
+<drawerS></drawerS>
+<bottomTabBar dataPosition="3"></bottomTabBar>

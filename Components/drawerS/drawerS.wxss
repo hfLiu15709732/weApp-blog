@@ -1,0 +1,6 @@
+/* Components/drawerS/drawerS.wxss */
+
+.PerBtn{
+    position: fixed;
+    bottom: 200rpx !important;
+}

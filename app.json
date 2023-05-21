@@ -1,0 +1,47 @@
+{
+    "usingComponents": {
+        "t-button": "/miniprogram_npm/tdesign-miniprogram/button/button",
+        "t-fab": "/miniprogram_npm/tdesign-miniprogram/fab/fab",
+        "t-back-top": "/miniprogram_npm/tdesign-miniprogram/back-top/back-top",
+        "t-drawer": "/miniprogram_npm/tdesign-miniprogram/drawer/drawer",
+        "t-side-bar": "/miniprogram_npm/tdesign-miniprogram/side-bar/side-bar",
+        "t-side-bar-item": "/miniprogram_npm/tdesign-miniprogram/side-bar-item/side-bar-item",
+        "t-tab-bar": "/miniprogram_npm/tdesign-miniprogram/tab-bar/tab-bar",
+        "t-tab-bar-item": "/miniprogram_npm/tdesign-miniprogram/tab-bar-item/tab-bar-item",
+        "t-tabs": "/miniprogram_npm/tdesign-miniprogram/tabs/tabs",
+        "t-tab-panel": "/miniprogram_npm/tdesign-miniprogram/tab-panel/tab-panel",
+        "t-search": "/miniprogram_npm/tdesign-miniprogram/search/search",
+        "t-textarea": "/miniprogram_npm/tdesign-miniprogram/textarea/textarea",
+        "t-swiper": "/miniprogram_npm/tdesign-miniprogram/swiper/swiper",
+        "t-swiper-nav": "/miniprogram_npm/tdesign-miniprogram/swiper-nav/swiper-nav",
+        "t-cell": "/miniprogram_npm/tdesign-miniprogram/cell/cell",
+        "bottomTabBar":"/Components/bottomTabBar/bottomTabBar",
+        "t-image": "/miniprogram_npm/tdesign-miniprogram/image/image",
+        "t-tag": "/miniprogram_npm/tdesign-miniprogram/tag/tag",
+        "t-sticky": "/miniprogram_npm/tdesign-miniprogram/sticky/sticky",
+        "t-steps": "/miniprogram_npm/tdesign-miniprogram/steps/steps",
+        "t-step-item": "/miniprogram_npm/tdesign-miniprogram/step-item/step-item",
+        "t-toast": "/miniprogram_npm/tdesign-miniprogram/toast/toast",
+        "t-result": "/miniprogram_npm/tdesign-miniprogram/result/result",
+        "towxml":"/towxml/towxml",
+        "drawerS":"/Components/drawerS/drawerS"
+
+
+
+
+      },
+  "pages":[
+    "pages/allHome/allHome",
+    "pages/detail/detail",
+    "pages/column/column",
+    "pages/list/list",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#709ced",
+    "navigationBarTitleText": "峰哥博客",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

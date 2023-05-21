@@ -1,0 +1,13 @@
+<!--Components/bottomTabBar/bottomTabBar.wxml-->
+<t-tab-bar value="{{dataPosition}}" split="{{false}}" bindchange="onChange"
+theme="tag" shape="round">
+  <t-tab-bar-item   value="1" icon="chart"
+    >最新文章</t-tab-bar-item
+  >
+  <t-tab-bar-item  value="2" icon="view-module"
+    >分类列表</t-tab-bar-item
+  >
+  <t-tab-bar-item   value="3" icon="control-platform"
+    >精选专栏</t-tab-bar-item
+  >
+</t-tab-bar>

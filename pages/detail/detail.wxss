@@ -1,0 +1,127 @@
+/* pages/detail/detail.wxss */
+.bottomArea{
+    padding-top: 50rpx;
+    padding-bottom: 100rpx;
+    background-color: #000;
+}
+.bottomBtn{
+    margin: 0 32rpx;
+    background-color: #09be4f !important;
+}
+.bottomBtn:last-child{
+    margin-top: 100rpx;
+}
+.h2w-dark:last-child{
+    padding-bottom: 30rpx !important;
+}
+.h2w__code language-js{
+    padding-top: 80rpx !important;
+    padding-bottom: 80rpx !important;
+}
+.h2w__img{
+    border-radius: 8px !important;
+    border: 1px solid #09be4f !important;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+}
+.h2w__h2{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    color: #709ced !important;
+    border-color: #709ced !important;
+    width: fit-content !important;
+
+}
+.h2w__h1{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: #709ced !important;
+    text-align: center !important;
+
+}
+
+.h2w__h3{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #709ced !important;
+    border-color: #709ced !important;
+    width: fit-content !important;
+
+}
+
+.h2w__h4{
+    margin-top: 18px !important;
+    margin-bottom: 18px !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #709ced !important;
+    width: fit-content !important;
+
+}
+.h2w__blockquote{
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    /* background-color: #ccc; */
+    border-left: 4px solid #00b96b !important;
+    /* border-top: 1px solid #f !important;
+    border-bottom: 1px solid #f7f7f7 !important;
+    border-right: 1px solid #f7f7f7 !important; */
+    background-color: #e6eed6 !important;
+    border-radius: 8px !important;
+    color: black !important;
+    font-size: 14px !important;
+    padding: 5px !important;
+}
+.h2w__blockquote .h2w__strong{
+    color: #000000 !important;
+}
+.h2w__p{
+    font-size: 14px !important;
+
+}
+.h2w__p .h2w__strong{
+    font-size: 15px !important;
+    color: #709ced;
+}
+.h2w__a{
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #709ced;
+    border-radius: 6px;
+    padding: 5px 10px;
+
+}
+
+.h2w__table , .h2w__tableParent{
+    border-radius: 10px !important;
+}
+.h2w__th{
+    font-weight: 700 !important;
+    background-color: rgba(166 225 168);
+    color: black !important;
+}
+.h2w__tr{
+    font-weight: 700 !important;
+}
+.h2w__tr:nth-child(2n+1){
+    background-color: rgba(212,236,255);
+    color: black !important;
+}
+.h2w__tr:nth-child(2n+2){
+    background-color: rgba(84,169,255) !important;
+    color: black !important;
+}
+
+
+
+
+/* 关于代码块高亮的css */
+.hljs-comment{
+    color: rgba(127, 193, 255) !important;
+}

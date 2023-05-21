@@ -1,0 +1,99 @@
+/* pages/allHome/allHome.wxss */
+.example-search {
+    background-color: #709ced;
+    padding: 16rpx 32rpx;
+  }
+  
+  .example-search:not(:last-child) {
+    margin-bottom: 0rpx;
+  }
+
+  /* .swiperBox{
+      padding-left: 5%;
+      padding-right: 5%;
+      background-color: #709ced;
+  } */
+  .t-tabs{
+      margin-bottom: 40rpx !important;
+  }
+  .t-tabs__track{
+      background-color: #0052d9 !important;
+  }
+  .t-tabs__item-inner--active{
+    font-size: 19px !important;
+    font-weight: 700 !important;
+  }
+  .t-tabs{
+      margin-left: 40rpx;
+  }
+  .listBox{
+      padding: 10rpx 60rpx;
+      padding-bottom: 200rpx;
+  }
+  .listBox .listItem{
+      display: flex;
+      flex-direction: column;
+      padding: 40rpx 10rpx 40rpx;
+      border-bottom: 1px solid #dddddd;
+      background-color: #fff;
+      border-radius: 8px;
+  }
+  .listBox .title{
+      font-size: 19px;
+      color: #709ced;
+      font-weight: 700;
+      margin-bottom: 33rpx;
+  }
+  .listBox .expCol{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 700;
+      color: #aaaaaa;
+      margin-bottom: 38rpx;
+  }
+  .listBox .tagArea{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 33rpx;
+  }
+  .minW{
+      margin: 0px 80rpx;
+  }
+  .commonTag{
+      margin-right: 20rpx;
+  }
+  .listBox .introduce{
+    font-size: 12px;
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 26rpx;
+  }
+
+  .card-theme {
+    --td-swiper-radius: 0;
+    --td-swiper-item-padding: 0 12rpx;
+    --td-swiper-nav-dot-color: #e7e7e7;
+    --td-swiper-nav-dot-active-color: #0052d9;
+  
+    padding-bottom: 22px;
+    background-color: #709ced !important;
+  }
+  
+  .card-theme .card-theme-nav {
+    bottom: -18px;
+  }
+  
+  .scale-candidate {
+    height: 126px !important;
+  }
+  .external-class-image {
+    width: 100px;
+    height: 200px;
+  }
+  .emptyBox{
+      padding-top: 80rpx !important;
+      padding-bottom: 100rpx !important;
+  }

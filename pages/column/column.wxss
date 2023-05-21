@@ -1,0 +1,41 @@
+/* pages/column/column.wxss */
+
+.example-search {
+    background-color: #709ced;
+    padding: 16rpx 32rpx;
+  }
+  
+  .example-search:not(:last-child) {
+    margin-bottom: 0rpx;
+  }
+
+  .block {
+    background-color: #fff;
+    padding: 32rpx;
+    margin: 32rpx 0 48rpx;
+  }
+  .stepArea{
+      padding-bottom: 200rpx;
+  }
+  .bottomBtn{
+      margin-top: 32rpx;
+  }
+  .tagView{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32rpx;
+  }
+  .tagSelf{
+      margin-right: 24rpx;
+  }
+  .bottomView{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .emptyBox{
+    padding-top: 80rpx !important;
+    padding-bottom: 100rpx !important;
+    min-height: 600rpx !important;
+    }

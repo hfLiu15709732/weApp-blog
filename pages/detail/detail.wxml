@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<!--loading-->
+<view class="loading" wx:if="{{isLoading}}">
+  <image class="loading__icon" src="/images/loading.svg"></image>
+</view>
+
+<!--使用towxml-->
+<towxml nodes="{{article}}" class="toWxml"/>
+
+<view class="bottomArea" hidden="{{isLoading}}">
+    <button type="primary" size="default" class="bottomBtn">收藏文章</button>
+    <button type="primary" size="default" class="bottomBtn">评论文章</button>
+</view>
+
+
+<drawerS></drawerS>

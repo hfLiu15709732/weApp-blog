@@ -1,0 +1,110 @@
+<!--pages/allHome/allHome.wxml-->
+<view class="example-search">
+  <t-search placeholder="搜索预设文案"  bind:submit="bindToSearch"/>
+</view>
+<!-- 搜索栏位置 -->
+
+
+
+
+
+
+
+<view class="card-theme">
+  <t-swiper
+    current="{{current}}"
+    autoplay="{{true}}"
+    duration="{{duration}}"
+    interval="{{interval}}"
+    navigation="{{ { type: 'dots-bar' } }}"
+    list="{{swiperList}}"
+    image-props="{{ { shape: 'round' } }}"
+    previousMargin="34px"
+    nextMargin="34px"
+    t-class-nav="card-theme-nav"
+  />
+</view>
+<!-- 轮播图位置 -->
+
+
+<t-sticky >
+        <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs"
+        size="large"  >
+            <t-tab-panel label="时间降序" value="0" class="{{fixClass}}"/>
+            <t-tab-panel label="热度降序" value="1" class="{{fixClass}}"/>
+            <t-tab-panel label="热度升序" value="2" />
+            <t-tab-panel label="热度升序" value="3" />
+        </t-tabs>
+</t-sticky>
+<!-- 标签页信息位置（顶部固钉形式固定） -->
+
+
+
+<view class="minW">
+            <picker mode="date" bindchange="bindToFilter">
+                <button type="primary" >时间筛选</button>
+            </picker>
+</view>
+<!-- 筛选与排序专栏部分 -->
+
+
+<view class="loading" wx:if="{{isLoading}}">
+  <image class="loading__icon" src="/images/loading.svg"></image>
+</view>
+<!-- 等待请求信息svg图 -->
+
+
+<view class="listBox" hidden="{{allListData.length==0}}">
+    <view wx:for="{{allListData}}" wx:for-item="selfItem" wx:for-index="selfIndex"
+    wx:key="index" data-id="{{selfItem.id}}" capture-bind:tap="bindToDetail" class="listItem">
+        <view class="title">
+            {{selfItem.title}}
+        </view>
+        <!-- 标题信息行 -->
+        <view class="tagArea">
+
+            <t-tag class="margin-16" wx:for="{{selfItem.tags}}" wx:for-item="tagItem"
+            wx:for-index="tagIndex" wx:key="{{tagIndex}}"
+            theme="{{statusList[tagIndex]}}" size="small"
+             class="commonTag">
+            {{tagItem}}
+            </t-tag>
+
+        </view>
+        <!-- 标签行元素 -->
+        <view class="expCol">
+            <view>
+                {{selfItem.addtime}}
+            </view>
+            <view >
+                {{selfItem.type_id}}
+            </view>
+            <view >
+                {{selfItem.viewcount}}人
+            </view>
+        </view>
+        <!-- 相关信息行 -->
+        <view class="introduce">
+            {{selfItem.introduce}}
+        </view>
+        <!-- 简介信息行 -->
+    </view>
+</view>
+
+<view hidden="{{allListData.length!=0}}" class="emptyBox">
+        <t-result t-class-image="external-class-image">
+            <view slot="title"> 检索信息为空 </view>
+            <view slot="description"> 符合你描述的文章还没有哦,看看别处吧！ </view>
+        </t-result>
+</view>
+
+
+
+
+
+
+<drawerS></drawerS>
+<bottomTabBar dataPosition="1"></bottomTabBar>
+<!-- 底部标签栏组件 -->
+
+<t-toast id="t-toast" />
